@@ -24,6 +24,7 @@ The returned object type after insertion or removal from the list
 	// node.data === 'hello'
 	// node.next === null
 
+---------------
 
 ### Methods ###
 
