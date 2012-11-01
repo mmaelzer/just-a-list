@@ -1,0 +1,26 @@
+{
+  "name": "just-a-list",
+  "version": "0.1.0",
+  "description": "a linked-list implementation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./bin/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "mmaelzer/just-a-list"
+  },
+  "keywords": [
+    "linked-list",
+    "list"
+  ],
+  "author": "Mike Maelzer",
+  "license": "Apache (2.0)",
+  "devDependencies": {
+    "should": "~1.2.0",
+    "mocha": "~1.6.0"
+  }
+}
