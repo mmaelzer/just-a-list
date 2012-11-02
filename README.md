@@ -67,16 +67,30 @@ A convenience method that calls `removeBeginning()` until the list is empty
 	// list.length() === 0
 
 
-**length()**  
-A convenience method that walks the list and returns the count of nodes. Note that calling `list.length()` will take O(n) to execute.  
-
-	console.log(list.length());
-	//> 5
-
-
 **reverse()**  
 A convenience method that reverses the list  
 
 	// list: 5 -> 6 -> 1 -> 4
 	list.reverse();
 	// list: 4 -> 1 -> 6 -> 5
+
+------------------
+  
+### Properties ###  
+
+**head**  
+The first node in the list  
+
+	list.insertBeginning("hello");
+	console.log(list.head.data);
+	//> hello
+	list.insertBeginning("my name is");
+	console.log(list.head.next.data);
+	//> hello
+
+  
+**length**  
+The length of the list  
+
+	console.log(list.length);
+	//> 5

@@ -1,6 +1,6 @@
 {
   "name": "just-a-list",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a linked-list implementation",
   "main": "index.js",
   "directories": {
