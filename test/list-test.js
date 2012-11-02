@@ -25,7 +25,7 @@ describe('just-a-list', function() {
 				list.insertBeginning(data);
 			});
 
-			(list.length()).should.equal(testData.length);
+			(list.length).should.equal(testData.length);
 			list.head.data.should.equal(testData[testData.length - 1]);
 			done();
 		});
@@ -60,10 +60,10 @@ describe('just-a-list', function() {
 				list.insertBeginning(data);
 			});
 
-			var length = list.length();
+			var length = list.length;
 			var expectedNode = list.head.next.next;
 			list.removeAfter(list.head);
-			list.length().should.equal(length - 1);
+			list.length.should.equal(length - 1);
 			list.head.next.should.equal(expectedNode);
 			done();
 		});
@@ -97,7 +97,7 @@ describe('just-a-list', function() {
 				list.insertBeginning(data);
 			});
 
-			(list.length()).should.equal(testData.length);
+			(list.length).should.equal(testData.length);
 			done();
 		});
 	});
@@ -121,7 +121,7 @@ describe('just-a-list', function() {
 			});
 
 			list.clear();
-			list.length().should.equal(0);
+			list.length.should.equal(0);
 			should.not.exist(list.head);
 			done();
 		});
