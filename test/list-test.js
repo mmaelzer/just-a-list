@@ -91,17 +91,6 @@ describe('just-a-list', function() {
 		});
 	});
 
-	describe("#length()", function() {
-		it("returns the number of items in the list", function(done) {
-			testData.forEach(function(data) {
-				list.insertBeginning(data);
-			});
-
-			(list.length).should.equal(testData.length);
-			done();
-		});
-	});
-
 	describe("#reverse()", function() {
 		it("reverses the nodes in the list", function(done) {
 			testData.forEach(function(data) {
@@ -123,6 +112,17 @@ describe('just-a-list', function() {
 			list.clear();
 			list.length.should.equal(0);
 			should.not.exist(list.head);
+			done();
+		});
+	});
+
+	describe("length", function() {
+		it("returns the number of items in the list", function(done) {
+			testData.forEach(function(data) {
+				list.insertBeginning(data);
+			});
+
+			(list.length).should.equal(testData.length);
 			done();
 		});
 	});
