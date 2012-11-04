@@ -76,7 +76,7 @@ A convenience method that reverses the list
 
 ------------------
   
-### Properties ###  
+### Properties ###
 
 **head**  
 The first node in the list  
