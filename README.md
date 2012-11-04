@@ -1,3 +1,5 @@
+[![build status](https://secure.travis-ci.org/mmaelzer/just-a-list.png)](http://travis-ci.org/mmaelzer/just-a-list)
+
 just-a-list
 ===========
 
